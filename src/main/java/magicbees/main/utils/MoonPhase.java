@@ -7,53 +7,53 @@ import net.minecraft.world.World;
  * Class to abstract the moon phase from the world time a bit.
  */
 public enum MoonPhase {
-	FULL("full"),
-	WANING_GIBBOUS("gibbousWaning"),
-	WANING_HALF("halfWaning"),
-	WANING_CRESCENT("crescentWaning"),
-	NEW("new"),
-	WAXING_CRESCENT("crescentWaxing"),
-	WAXING_HALF("halfWaxing"),
-	WAXING_GIBBOUS("gibbousWaxing");
 
-	private String phaseName;
+    FULL("full"),
+    WANING_GIBBOUS("gibbousWaning"),
+    WANING_HALF("halfWaning"),
+    WANING_CRESCENT("crescentWaning"),
+    NEW("new"),
+    WAXING_CRESCENT("crescentWaxing"),
+    WAXING_HALF("halfWaxing"),
+    WAXING_GIBBOUS("gibbousWaxing");
 
-	private MoonPhase(String name) {
-		this.phaseName = name;
-	}
+    private String phaseName;
 
-	public boolean isBetween(MoonPhase first, MoonPhase second) {
-		boolean flag = false;
+    private MoonPhase(String name) {
+        this.phaseName = name;
+    }
 
-		if (first.ordinal() <= second.ordinal()) {
-			// Straightforward.
-			flag = first.ordinal() <= this.ordinal() && this.ordinal() <= second.ordinal();
-		}
-		else {
-			// Wraps around the boundary.
-			flag = (first.ordinal() <= this.ordinal() && this.ordinal() <= WAXING_GIBBOUS.ordinal()) ||
-					(FULL.ordinal() <= this.ordinal() && this.ordinal() <= second.ordinal());
-		}
+    public boolean isBetween(MoonPhase first, MoonPhase second) {
+        boolean flag = false;
 
-		return flag;
-	}
+        if (first.ordinal() <= second.ordinal()) {
+            // Straightforward.
+            flag = first.ordinal() <= this.ordinal() && this.ordinal() <= second.ordinal();
+        } else {
+            // Wraps around the boundary.
+            flag = (first.ordinal() <= this.ordinal() && this.ordinal() <= WAXING_GIBBOUS.ordinal())
+                    || (FULL.ordinal() <= this.ordinal() && this.ordinal() <= second.ordinal());
+        }
 
-	public String getLocalizedName() {
-		return LocalizationManager.getLocalizedString("moon." + this.phaseName);
-	}
-	
-	public String getLocalizedNameAlt() {
-		if (StatCollector.canTranslate("moon.alt." + this.phaseName)) {
-			return LocalizationManager.getLocalizedString("moon.alt." + this.phaseName);
-		}
-		return getLocalizedName();
-	}
+        return flag;
+    }
 
-	public static MoonPhase getMoonPhase(World w) {
-		return getMoonPhaseFromTime(w.getWorldTime());
-	}
+    public String getLocalizedName() {
+        return LocalizationManager.getLocalizedString("moon." + this.phaseName);
+    }
 
-	public static MoonPhase getMoonPhaseFromTime(long time) {
-		return MoonPhase.values()[(int)((time - 6000) / 24000L) % 8];
-	}
+    public String getLocalizedNameAlt() {
+        if (StatCollector.canTranslate("moon.alt." + this.phaseName)) {
+            return LocalizationManager.getLocalizedString("moon.alt." + this.phaseName);
+        }
+        return getLocalizedName();
+    }
+
+    public static MoonPhase getMoonPhase(World w) {
+        return getMoonPhaseFromTime(w.getWorldTime());
+    }
+
+    public static MoonPhase getMoonPhaseFromTime(long time) {
+        return MoonPhase.values()[(int) ((time - 6000) / 24000L) % 8];
+    }
 }
