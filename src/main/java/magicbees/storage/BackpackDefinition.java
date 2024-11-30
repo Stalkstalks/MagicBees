@@ -5,6 +5,7 @@ import java.util.List;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+
 import forestry.api.storage.IBackpackDefinition;
 
 /**
@@ -12,78 +13,66 @@ import forestry.api.storage.IBackpackDefinition;
  *
  * @author MysteriousAges
  */
-public class BackpackDefinition implements IBackpackDefinition
-{
-	private ArrayList<ItemStack> items;
-	private String key;
-	private String name;
-	private int colour;
+public class BackpackDefinition implements IBackpackDefinition {
 
-	public BackpackDefinition(String backpackKey, String backpackName, int backpackColour)
-	{
-		items = new ArrayList<ItemStack>();
-		this.name = backpackName;
-		this.key = backpackKey;
-		this.colour = backpackColour;
-	}
+    private ArrayList<ItemStack> items;
+    private String key;
+    private String name;
+    private int colour;
 
-	@Override
-	public String getKey()
-	{
-		return this.key;
-	}
+    public BackpackDefinition(String backpackKey, String backpackName, int backpackColour) {
+        items = new ArrayList<ItemStack>();
+        this.name = backpackName;
+        this.key = backpackKey;
+        this.colour = backpackColour;
+    }
 
-	@Override
-	public String getName(ItemStack backpack)
-	{
-		return name;
-	}
+    @Override
+    public String getKey() {
+        return this.key;
+    }
 
-	@Override
-	public int getPrimaryColour()
-	{
-		return this.colour;
-	}
+    @Override
+    public String getName(ItemStack backpack) {
+        return name;
+    }
 
-	@Override
-	public int getSecondaryColour()
-	{
-		return 0xFFFFFF;
-	}
+    @Override
+    public int getPrimaryColour() {
+        return this.colour;
+    }
 
-	@Override
-	public void addValidItem(ItemStack validItem)
-	{
-		if (!this.items.contains(validItem))
-		{
-			this.items.add(validItem);
-		}
-	}
+    @Override
+    public int getSecondaryColour() {
+        return 0xFFFFFF;
+    }
 
-	@Override
-	public boolean isValidItem(ItemStack itemStack) {
-		boolean flag = false;
+    @Override
+    public void addValidItem(ItemStack validItem) {
+        if (!this.items.contains(validItem)) {
+            this.items.add(validItem);
+        }
+    }
 
-		ItemStack stack;
-		for (int i = 0; i < this.items.size() && !flag; i++)
-		{
-			stack = this.items.get(i);
-			// If comparison stack has meta of -1
-			if (stack.getItem() == itemStack.getItem())
-			{
-				flag = stack.getItemDamage() == -1 || stack.getItemDamage() == OreDictionary.WILDCARD_VALUE || stack.getItemDamage() == itemStack.getItemDamage();
-			}
-		}
+    @Override
+    public boolean isValidItem(ItemStack itemStack) {
+        boolean flag = false;
 
-		return flag;
-	}
+        ItemStack stack;
+        for (int i = 0; i < this.items.size() && !flag; i++) {
+            stack = this.items.get(i);
+            // If comparison stack has meta of -1
+            if (stack.getItem() == itemStack.getItem()) {
+                flag = stack.getItemDamage() == -1 || stack.getItemDamage() == OreDictionary.WILDCARD_VALUE
+                        || stack.getItemDamage() == itemStack.getItemDamage();
+            }
+        }
 
-	@Override
-	public void addValidItems(List<ItemStack> validItems)
-	{
-		for (ItemStack s : validItems)
-			addValidItem(s);
+        return flag;
+    }
 
-	}
-
+    @Override
+    public void addValidItems(List<ItemStack> validItems) {
+        for (ItemStack s : validItems) addValidItem(s);
+    }
 }

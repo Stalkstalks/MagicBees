@@ -5,9 +5,15 @@ language.code=ru_RU
 #Items
 item.magicbees:jellyBabies.name=Горсть маленького желе
 item.thaumiumScoop.name=Таумический сачок
+item.manasteelScoop.name=Манасталиевый сачок
 item.thaumiumGrafter.name=Таумический садовый нож
+item.manasteelGrafter.name=Манасталиевый садовый нож
 item.magicbees:mysteriousMagnet.name=Таинственный магнит
 item.moonDial.name=Нефритовый набор луны
+
+item.voidScoop.name=Пустотный сачок
+item.voidGrafter.name=Пустотный садовый нож
+item.beeRing.name=Кольцо для сбора пчел
 
 #Tiles
 tile.planks.greatwood.name=Доски из великого дерева
@@ -120,6 +126,9 @@ item.frameMetabolic.name=Метаболическая рамка
 item.frameNecrotic.name=Некротическая рамка
 item.frameTemporal.name=Временная рамка
 item.frameOblivion.name=Забвенная рамка
+item.bloodFrame.name=Сангиус Артус
+item.frenziedFrame.name=Сводящая с ума рамка Безумия
+item.bloodSoakedFrame.name=Кровавая рамка
 
 #Capsules
 capsule.magic=Магическая капсула %s
@@ -166,6 +175,14 @@ misc.level=Уровень %s
 misc.magnetActive=%s - активирован
 misc.magnetInactive=%s - деактивирован
 
+#Botania flowers; Lexicon entries nearer the end.
+tile.botania:flower.beegonia.name=Бегония
+tile.botania:flower.beegonia.lore=We won't bee seeing you any more...
+tile.botania:flower.hiveacynth.name=Хивеацинт
+tile.botania:flower.hiveacynth.lore=In a Morvelaira's Garden
+tile.botania:flower.hibeescus.name=Гибискус
+tile.botania:flower.hibeescus.lore=The puns may sting a bit
+
 #Research
 research.requiresBlock=Требует основы %s
 research.requiresPhase=Происходит между %s и %s
@@ -177,6 +194,14 @@ research.node.pure=чистого
 research.node.dark=тёмного
 research.node.chaotic=хаотического
 research.block.crystals=Скопление кристаллов
+
+#Blood Magic Compat
+tc.research_name.MB_BloodFrame=Сангуис Артус
+tc.research_text.MB_BloodFrame=Добро пожаловать, уважаемый гость. К месту рождения нашей Династии!
+tc.research_name.MB_FrenziedFrame=Сводящая с ума рамка Безумия
+tc.research_text.MB_FrenziedFrame=Пусть хаос охватит мир! Пусть хаос охватит мир!
+frenziedFrame.1=Вы не знаете, как это пришло к вам... безумие, не так ли?<BR>Вы помните, как ругались другим, что слышали какой-то голос где-то в глубине души, почти беззвучно.. кричать? Вы можете смутно вспомнить его ужасный призыв, кричащий о том, чтобы вы сожгли мир очищающим пламенем хаоса.<BR>You Вы взяли его в руки и отчетливо помните, как хаотические энергии прожигают ваше тело, опаливая ваш разум это огонь.<BR><BR>Но... конечно, ты этого не сделал, в конце концов, это было бы безумием...
+bloodFrame.1=Вы чувствуете дрожь в самой своей душе, когда держите эту рамку. Вы чувствуете... ужас.<BR>Вы не совсем уверены в том, что вы создали, находясь в кровавом безумии, но вы можете только с ужасом наблюдать, как ваши пчелы медленно рушатся у вас на глазах, только для того, чтобы в мгновение ока сменится гротескным симулякром.<BR>Вы почти клянетесь, что видите это... избиение? Как если бы оно каким-то образом было живым?<BR>Но... конечно, нет, ведь это было бы безумием...
 
 #Species
 magicbees.speciesMystical=Мистическая
@@ -296,14 +321,14 @@ magicbees.speciesApatite=Апатитовая
 magicbees.speciesApatite.description=День и ночь жужжат. Я забаррикадировал окна и спрятался в подвале, но пронзительный шум апатин пчёл проникал в стены и доводил меня до безумия.|Beekeeping 101
 
 magicbees.speciesMutable=Изменчивая
-magicbees.speciesMutable.description=Changeable in nature, mercurial in personality.|Apinomicon
+magicbees.speciesMutable.description=Изменчивая по натуре, непостоянная по характеру.|Apinomicon
 magicbees.speciesTransmuting=Трансмутирующая
-magicbees.speciesTransmuting.description="I could've sworn this was made out of stone yesterday!"|Sengir, Mad Apiarist
+magicbees.speciesTransmuting.description="Я мог бы поклясться, что вчера это было сделано из камня!"|Sengir, Mad Apiarist
 magicbees.speciesCrumbling=Разрушающая
-magicbees.speciesCrumbling.description=They have a corrosive effect on their surroundings, rapidly aging them.|Apinomicon
+magicbees.speciesCrumbling.description=Они оказывают разъедающее воздействие на окружающую среду, быстро состаривая.|Apinomicon
 
 magicbees.speciesInvisible=Невидимая
-magicbees.speciesInvisible.description=Easy to miss, their glassy body is difficult to spot in the countryside.|Apinomicon
+magicbees.speciesInvisible.description=Их легко не заметить, их стекловидное тело трудно заметить в сельской местности.|Apinomicon
 
 magicbees.speciesTCAir=Аура
 magicbees.speciesTCAir.description="Они работают так быстро, что это захватывает дух."|Sengir, Mad Apiarist
@@ -312,7 +337,7 @@ magicbees.speciesTCFire.description=Внимание: содержание ул�
 magicbees.speciesTCWater=Аква
 magicbees.speciesTCWater.description="Я пытался размножить их однажды, но я получил мыло."|MysteriousAges, Apprentice Thaumaturge
 magicbees.speciesTCEarth=Солим
-magicbees.speciesTCEarth.description="You're really gonna dig these bees, but watch out - they bore quite easily."|MysteriousAges, Apprentice Comedian
+magicbees.speciesTCEarth.description="Ты влюбишься в этих пчёл, но будь осторожен - они быстро наскучивают.".|MysteriousAges, Apprentice Comedian
 magicbees.speciesTCOrder=Праекантатио
 magicbees.speciesTCOrder.description=Пчеловодство это магия!|Apinomicon, Preface
 magicbees.speciesTCChaos=Абсолютные
@@ -326,7 +351,7 @@ magicbees.speciesTCFlux.description="Я думал, что они помогут
 magicbees.speciesTCAttractive=Привлекательные
 magicbees.speciesTCAttractive.description=Претерпев странную мутацию, эти пчёлы в настоящее время привлекают магию к себе.|Apinomicon
 magicbees.speciesTCRejuvenating=Rejuvenating
-magicbees.speciesTCRejuvenating.description=The hum of the hive is magical, and over time is absorbed by nearby nodes.|Apinomicon
+magicbees.speciesTCRejuvenating.description=Гул улья волшебный, и со временем он поглощается близлежащими узлами.|Apinomicon
 magicbees.speciesTCBrainy=Умные
 magicbees.speciesTCBrainy.description=Их соты могут быть вонючими и плохо пахнуть, но их интеллект хорошо развит.|Apinomicon
 magicbees.speciesTCWispy=Виспи
@@ -341,40 +366,40 @@ magicbees.speciesTCPork=Свиные
 magicbees.speciesTCPork.description="Хрю, хрю. Эм.... бззз?"|Confused bee
 magicbees.speciesEEMinium=Алхимические
 magicbees.speciesEEMinium.description=Это может быть возможным, чтобы воспользоваться их ртутной и изменчивой природой.|Apinomicon
-magicbees.speciesAMEssence=Essence
-magicbees.speciesAMEssence.description=Drawing from motes of dust in the air and ground, they concentrate the energy
-magicbees.speciesAMQuintessence=Quintessential
-magicbees.speciesAMQuintessence.description=The heart of magic lies dormant in all things.|Apinomicon, preface
+magicbees.speciesAMEssence=Эссенция
+magicbees.speciesAMEssence.description=Извлекая энергию из пылинок в воздухе и на земле, они концентрируют энергию
+magicbees.speciesAMQuintessence=Квинтэссенция
+magicbees.speciesAMQuintessence.description=Сердце магии дремлет во всех вещах.|Apinomicon, preface
 magicbees.speciesAMEarth=Erde
-magicbees.speciesAMEarth.description=Empowered by the Earth, their produce is infused with its essence.|Apinomicon
+magicbees.speciesAMEarth.description=Наделенные силой Земли, их продукты пропитаны ее сущностью.|Apinomicon
 magicbees.speciesAMAir=Luft
-magicbees.speciesAMAir.description=Swift as the wind, and lighter than air.|Apinomicon
+magicbees.speciesAMAir.description=Быстрые, как ветер, и легче воздуха.|Apinomicon
 magicbees.speciesAMFire=Feuer
-magicbees.speciesAMFire.description=Their colony can reach temperatures that boil water and melt metals.|Apinomicon
+magicbees.speciesAMFire.description=Их колония может достигать температур, при которых кипит вода и плавятся металлы.|Apinomicon
 magicbees.speciesAMWater=Wasser
-magicbees.speciesAMWater.description=Through prolonged exposure to liquids, their combs are quite wet and heavy.|Apinomicon
+magicbees.speciesAMWater.description=Из-за длительного воздействия жидкостей их соты становятся довольно влажными и тяжелыми.|Apinomicon
 magicbees.speciesAMLightning=Blitz
-magicbees.speciesAMLightning.description=They can travel vast distances in a blink, and are known for starting many wildfires.|Apinomicon
+magicbees.speciesAMLightning.description=Они могут преодолевать огромные расстояния в мгновение ока и известны тем, что устраивают множество лесных пожаров.|Apinomicon
 magicbees.speciesAMPlant=Staude
-magicbees.speciesAMPlant.description=They have an affinity for all that is green and grows.|Apinomicon
+magicbees.speciesAMPlant.description=Они питают слабость ко всему зеленому и растущему.|Apinomicon
 magicbees.speciesAMIce=Eis
-magicbees.speciesAMIce.description="They keep stealing stuff from me, and I never see them. They're far too slippery."|MysteriousAges, incorrigible punster
+magicbees.speciesAMIce.description="Они продолжают красть у меня вещи, и я никогда их не вижу. Они слишком скользкие".|MysteriousAges, incorrigible punster
 magicbees.speciesAMMagma=Magma
-magicbees.speciesAMMagma.description=As they fly by, they sear the surface of the landscape, eventually scouring all plants and fragile minerals away.|Apinomicon
+magicbees.speciesAMMagma.description=Пролетая мимо, они опаляют поверхность ландшафта, в конечном итоге уничтожая все растения и хрупкие минералы.|Apinomicon
 magicbees.speciesAMArcane=Arkanen
-magicbees.speciesAMArcane.description="Curious creatures, though their produce is quite useful."|Mithion, Adept
+magicbees.speciesAMArcane.description="Любопытные существа, хотя их продукция довольно полезна".|Mithion, Adept
 magicbees.speciesAMVortex=Вихревые
 magicbees.speciesAMVortex.description=Ненасытны маной, они могут быть опасны для любого заклинателя.|Apinomicon
 magicbees.speciesAMWight=Wight
-magicbees.speciesAMWight.description="They attract magical spirits; not always docile."|Mithion, Adept
+magicbees.speciesAMWight.description=Они привлекают волшебных духов; не всегда послушны".|Mithion, Adept
 magicbees.speciesTEBlizzy=Blizzy
-magicbees.speciesTEBlizzy.description=Frigid and cold, like miniature snowmen.|Apinomicon
+magicbees.speciesTEBlizzy.description=Холодные, как миниатюрные снеговики.|Apinomicon
 magicbees.speciesTEGelid=Gelid
-magicbees.speciesTEGelid.description=Liquid coolant producers.|Apinomicon
+magicbees.speciesTEGelid.description=Производители жидких охлаждающих жидкостей.|Apinomicon
 magicbees.speciesTEDante=Dante
-magicbees.speciesTEDante.description=Mixing bees in an inferno produces surprising results.|Apinomicon
+magicbees.speciesTEDante.description=Смешивание пчел в аду дает удивительные результаты.|Apinomicon
 magicbees.speciesTEPyro=Pyro
-magicbees.speciesTEPyro.description=You Monster.|Everyone, to you.
+magicbees.speciesTEPyro.description=Ты монстр.|Everyone, to you.
 magicbees.speciesTEElectrum=Electrum
 magicbees.speciesTEElectrum.description=...|Apinomicon
 magicbees.speciesTEPlatinum=Platinum
@@ -388,9 +413,9 @@ magicbees.speciesTEBronze.description=...|Apinomicon
 magicbees.speciesTECoal=Carbon
 magicbees.speciesTECoal.description=...|Apinomicon
 magicbees.speciesTEDestabilized=Destabilized
-magicbees.speciesTEDestabilized.description=These bees started out unstable; they didn't get better with time.|Apinomicon
+magicbees.speciesTEDestabilized.description=Эти пчелы изначально были нестабильными; со временем они не становились лучше.|Apinomicon
 magicbees.speciesTELux=Lux
-magicbees.speciesTELux.description=Let there be light...|Apinomicon
+magicbees.speciesTELux.description=Да будет свет...|Apinomicon
 magicbees.speciesTEWinsome=Winsome
 magicbees.speciesTEWinsome.description=....|Apinomicon
 magicbees.speciesTEEndearing=Endearing
@@ -404,6 +429,7 @@ magicbees.speciesBMBound.description=....|Apinomicon
 magicbees.species=
 magicbees.species.description=
 magicbees.speedBlinding=Blinding
+
 magicbees.effectCurative=Очищение
 magicbees.effectDigSpeed=Добывание
 magicbees.effectMoveSpeed=Ускорение
@@ -425,10 +451,12 @@ magicbees.effectAblaze=Ablaze
 magicbees.effectManaDrainer=Vortex
 magicbees.effectAMWisp=Spiritual
 magicbees.effectTEBlizzy=Blizzy
+
 flowerProvider.book=Книги
 flowerProvider.magic=Таумические цветы
 flowerProvider.arsmagica=Экзотические цветы
 flowerProvider.node=Узел
+
 classification.veiled=Сокрытые
 classification.veiled.description=Эти странные виды разбросаны по всему миру, могут иметь способности за пределами своего мышления.|Apinomicon
 classification.arcane=Скрытые
@@ -454,7 +482,7 @@ classification.metallic.description=Они собирают фрагменты �
 classification.gem=Жемчужные
 classification.gem.description=Они собирают фрагменты драгоценных камней в их сотах.|Apinomicon
 classification.transmuting=Polymorphic
-classification.transmuting.description=Reality seems to be somewhat volatile around bees of this family.|Apinomicon
+classification.transmuting.description=Реальность, по-видимому, несколько изменчива в отношении пчел этого семейства.|Apinomicon
 classification.thaumic=Таумические
 classification.thaumic.description=Эти пчёлы имеют повышенную близость к магии и ауре.|Apinomicon
 classification.fleshy=Мясистые
@@ -465,57 +493,102 @@ classification.essential=Ценные
 classification.essential.description=Эти пчёлы имеют повышенную близость к аспектированной магии.|Apinomicon
 
 tc.aspect.tempus=Time, Moment, Eternity
-tc.research_category.MAGICBEES=Apimancy
+tc.research_category.MAGICBEES=Магия пчеловодства
 
 
-tc.research_name.MB_Root=Apimancy
-tc.research_text.MB_Root=[MB] Adding some sparkle to your buzz.
-tc.research_page.MB_Root.1=Welcome to Apimancy! As a budding keeper of magical bees, there are a few things you should know before diving in. As your acceptance letter to the Academy of Austere Apimancers has mentioned, there are several new tools available to discover. These include some improved versions of Forestry tools, each with their own particular quirks and new frames for your apiaries. <LINE> You may also discover that there are new bee strains available to discover, if you can coax them to live in certain conditions. The Forestry Escritoire will help you discover them and become the envy
-tc.research_page.MB_Root.2=of your former, nonmagical colleagues. Also take note of the several new strains of wild bees that have appeared: these are the key to progressing into the magical lineages of your small winged charges.
+tc.research_name.MB_Root=Магия пчеловодства
+tc.research_text.MB_Root=[MB] Добавим немного блеска вашему кайфу.
+tc.research_page.MB_Root.1=Добро пожаловать в Магия пчеловодства! Как начинающему хранителю волшебных пчел, есть несколько вещей, которые вы должны знать, прежде чем погрузиться в работу. Как упоминалось в вашем письме о приеме в Академию Суровых Пчеловодов, вам доступно несколько новых инструментов. К ним относятся несколько улучшенных версий инструментов для лесного хозяйства, каждая со своими особенностями, и новые рамки для ваших пасек.  <LINE> Вы также можете обнаружить, что существуют новые штаммы пчел, которые можно обнаружить, если вам удастся уговорить их жить в определенных условиях. Секретер лесного хозяйства поможет вам обнаружить их и стать предметом зависти
+tc.research_page.MB_Root.2=ваших бывших, не магических коллег. Также обратите внимание на несколько появившихся новых штаммов диких пчел: они являются ключом к развитию волшебных линий ваших маленьких крылатых подопечных.
 
 tc.research_name.MB_LoreFragment=Фрагменты знаний
 tc.research_text.MB_LoreFragment=[MB] Исследование? Скорее всего пчелиное исследование!
-tc.research_page.MB_LoreFragment.1=While experimenting with bee breeds, you may run accross a strain whose intellectual capabilities are a match for your own. Well, maybe, however unlikely that is. It's possible that they may unearth some obscure reference or a snippet of information that your great intellect may have missed while exploiting the greater mysteries of the universe. <BR> Should your helpful buzzing friends happen to locate this sort of item for you, it may be possible to combine the scraps together into something a little more cohesive.
+tc.research_page.MB_LoreFragment.1=Экспериментируя с породами пчел, вы можете наткнуться на штамм, интеллектуальные способности которого соответствуют вашим собственным. Что ж, возможно, как бы маловероятно это ни было. Вполне возможно, что они раскопают какую-нибудь неясную ссылку или фрагмент информации, которые ваш великий интеллект, возможно, упустил, исследуя великие тайны Вселенной. <BR> Если вашим услужливым жужжащим друзьям посчастливится найти для вас что-нибудь подобное, возможно, удастся объединить обрезки в нечто более цельное.
 
 tc.research_name.MB_FrameMagic=Магическая рамка
 tc.research_text.MB_FrameMagic=[MB] Появление магии в контекстах пчеловодства
-tc.research_page.MB_FrameMagic.1=The Magic Frame is a simple improvement over your regular, run-of-the-mill Untreated Frames. Still fairly simple to produce, it is capable of lasting three times longer in an apiary than Untreated Frames before becoming unuseable. The enchantable properties of the Magic Frame enable it to be used with several of the special essences involved in Apimancy where other frames would reject the infusion of magics.
+tc.research_page.MB_FrameMagic.1=Волшебная рамка - это простое усовершенствование по сравнению с обычными необработанными рамками. Несмотря на то, что она довольно проста в изготовлении, она способна прослужить на пасеке в три раза дольше, чем необработанные рамки, прежде чем придет в негодность. Зачаровывающие свойства Магической рамки позволяют использовать ее с несколькими особыми эссенциями, используемыми в Магии пчеловодства, там, где другие рамки отвергли бы вливание магии.
 
 tc.research_name.MB_Scoop=Таумический сачок
 tc.research_text.MB_Scoop=[MB] Используйте с осторожностью.
-tc.research_page.MB_Scoop.1=Normal scoops are fragile, and prone to breakage. As an authority in Apimancy, you can do better. By adding some Thaumium to the handle, and lacing it with a measure of order, your new scoop will last up to three times longer! <BR> In addition, the Thaumium in the device will accept the Repair enchantment.
+tc.research_page.MB_Scoop.1=Обычные сачки хрупкие и склонны к поломке. Как специалист по Магии пчеловедения, вы можете сделать лучше. Если добавить немного таумия в ручку и аккуратно зашнуровать ее, ваш новый сачок прослужит в три раза дольше! <BR> Кроме того, таумий в устройстве примет восстанавливающее заклинание.
 
 tc.research_name.MB_Grafter=Таумический садовый нож
 tc.research_text.MB_Grafter=[MB] Саженцы для каждого случая.
-tc.research_page.MB_Grafter.1=Simple grafters are almost uselessly fragile, and while Proven Grafters are useful, the rarity of emeralds makes them annoying to procure. The solution? Make it yourself! <BR> The Thaumium Grafter, like the Thaumium Scoop, is a tougher, enchantable version of the most basic of the Arborimancer's tools. Use caution though, for although the Repair enchantment can be applied to the grafter, its unusual properties make it exhausting to use.
+tc.research_page.MB_Grafter.1=Простой садовый нож почти бесполезно хрупок, и, хотя проверенные садовые ножи полезны, редкость садовый ножей затрудняет их приобретение. Решение? Сделай это сам! <BR> Таумический садовый нож, как и таумический сачок, представляет собой более жесткую, зачаровываемую версию самого простого из инструментов лесовода. Однако будьте осторожны, поскольку, хотя восстанавливающее заклинание может быть применено к прививщику, его необычные свойства делают его использование утомительным.
 
 tc.research_name.MB_EssenceLife=Эссенция ложной жизни
 tc.research_text.MB_EssenceLife=[MB] Роза с другим названием. . .
-tc.research_page.MB_EssenceLife.1=Simple to create by means of magic, this essence has unusual properties when exposed to bees. When combined with an everyday apiary frame, it has the effect of greatly extending the lifespan of a working hive.
+tc.research_page.MB_EssenceLife.1=Простая в приготовлении с помощью магии, эта эссенция обладает необычными свойствами при воздействии на пчел. В сочетании с обычной рамкой для пасеки она значительно продлевает срок службы рабочего улья.
 
 tc.research_name.MB_EssenceDeath=Эссенция неглубокой могилы
 tc.research_text.MB_EssenceDeath=[MB] Не совсем шесть футов под килем.
-tc.reseacrh_page.MB_EssenceDeath.1=The Essence of a Shallow Grave channels the death of many of the ... "natural" creatures that wander the world: Zombies, Skeletons, those sorts of things. Exposing bees to this energy has the effect of making them slow and sluggish, and curtails the extent of their lifespan. Some Apimancers consider using frames imbued with these Essences to be cruel, however, others view it as a natrual part of normal beekeeping, with an eye to creating their perfect strain of bees sometime within THEIR lifetime. <BR> The Apimancer's Guild of Safety recommends handling them with telekenisis or very long tongs.
+tc.research_page.MB_EssenceDeath.1=Эссенция неглубокой могилы приводит к смерти... "естественных" мобов, которые бродят по миру: зомби, скелеты и тому подобное. Воздействие этой энергии на пчел приводит к тому, что они становятся медлительными и неповоротливыми и сокращает продолжительность их жизни. Некоторые Маги пчеловодства считают использование рамок, пропитанных этими эссенциями, жестоким, однако другие рассматривают это как естественную часть обычного пчеловодства с прицелом на создание своего идеального сорта пчел когда-нибудь в течение ИХ жизни. <BR> Гильдия по безопасности Магического пчеловодства рекомендует обращаться с ними телекинезом или очень длинными щипцами.
 
 tc.research_name.MB_EssenceArmor=Эссенция вечной прочности
 tc.research_text.MB_EssenceArmor=[MB] Резина для Вашего клея
-tc.research_page.MB_EssenceArmor.1=This is the distilled essence of protection, bound to last forever, or until the magics stored within it weaken and eventually break. But until then, it's invincible. Mostly. <BR> While Magic Frames are useful, they are a tad fragile. This essence takes the enchantments you weave into Magic frames to an entirely new level. Combine the essence with a magic frame, and it should have a vastly extended lifespan.
+tc.research_page.MB_EssenceArmor.1=Это дистиллированная эссенция защиты, которая должна длиться вечно или до тех пор, пока хранящаяся в ней магия не ослабнет и, в конечном счете, не сломается. Но до тех пор она неуязвима. В основном. <BR> Хотя волшебные рамки полезны, они немного хрупкие. Эта эссенция выводит чары, которые вы вплетаете в магические рамки, на совершенно новый уровень. Соедините эссенцию с магической рамкой, и срок ее службы значительно увеличится.
 
 tc.research_name.MB_EssenceUnstable=Эссенция изменчивого постоянства
 tc.research_text.MB_EssenceUnstable=[MB] Гарантированная неуверенность
-tc.research_page.MB_EssenceUnstable.1=Unstable by nature, the Essence of Fickle Permanence has the side effect of causing normally stable objects and systems to become somewhat unreliable. While this may mostly be a bad thing, Apimancers have discovered that exposing a hive to the essence has the duel effects of both causing the bees to work faster, and the offspring to have higher mutation rates.
+tc.research_page.MB_EssenceUnstable.1=Нестабильная по своей природе эссенция Изменчивого постоянства имеет побочный эффект, заключающийся в том, что обычно стабильные объекты и системы становятся несколько ненадежными. Хотя в основном это может быть плохо, Маги пчеловодства обнаружили, что воздействие эссенции на улей имеет противоположный эффект: пчелы работают быстрее, а у потомства повышается частота мутаций.
 
 tc.research_name.MB_EssenceTime=Эссенция утраченного времени
-tc.research_text.MB_EssenceTime=[MB] No time like the unmoment
-tc.research_page.MB_EssenceTime.1=Time is a fickle thing. It comes and it goes, but where exactly does it go to? As a respectable thaumaturge, it has become possible to trap these wasted moments and save them in a magical form. So, now that it is possible to collect extra time from the world, it seems only appropriate that they are used in a place that would be useful. It would be too dangerous to attempt to access these moments yourself for the moment, but perhaps it would be simple to allow your bees access to this untapped lump of time. <BR> By combining the essence with a Magic Frame as usual will suffice to extend the lifespan of bees in your keeping by several times.
+tc.research_text.MB_EssenceTime=[MB] Нет времени лучше, чем безработица
+tc.research_page.MB_EssenceTime.1=Время - непостоянная вещь. Оно приходит и уходит, но куда именно оно уходит? Как у уважаемого тауматурга, стало возможным улавливать эти потраченные впустую моменты и сохранять их в магической форме. Итак, теперь, когда можно собирать дополнительное время в мире, кажется уместным использовать его там, где это было бы полезно. Было бы слишком опасно пытаться получить доступ к этим моментам самостоятельно в данный момент, но, возможно, было бы просто предоставить вашим пчелам доступ к этому неиспользованному кусочку времени. <BR> Обычного сочетания эссенции с волшебной рамкой будет достаточно, чтобы продлить продолжительность жизни пчел в вашем хозяйстве в несколько раз.
 
 tc.research_name.MB_DimensionalSingularity=Пространственная сингулярность
-tc.research_text.MB_DimensionalSingularity=[MB] Quantum flux for them, unlimited storage for you
-tc.research_page.MB_DimensionalSingularity.1=While it may appear similar to the Portable Hole, it serves as a two-way link with another place, which is... probably uninhabited. It should be possible to utilize these singularities to store materials outside of your dimensional understanding - which of course means that they won't clutter up your inventory. As they are now, they are not particularly useful, but there should be ways to unlock their potential.
+tc.research_text.MB_DimensionalSingularity=[MB] Квантовый поток для них, неограниченное хранилище для вас
+tc.research_page.MB_DimensionalSingularity.1=Хотя это может показаться похожим на Переносную дыру, оно служит двусторонней связью с другим местом, которое... вероятно, необитаемо. Должно быть возможно использовать эти особенности для хранения материалов за пределами вашего понимания измерений - что, конечно, означает, что они не будут загромождать ваш инвентарь. В нынешнем виде они не особенно полезны, но должны быть способы раскрыть их потенциал.
 
 tc.research_name.MB_EssenceOblivion=Эссенция бесконечного равнодушия
-tc.research_text.MB_EssenceOblivion=[MB] Cast aside with malice
-tc.research_page.MB_EssenceOblivion.1=Breeding bees for mutations can be aggrivating, especially whith long-lived species. With a little cleverness and only the slightest hint of smugness, you have found a way to utilize the Dimensional Singularity in a manner that only sucks away the life force of your tiny flying friends, bit by bit. Well, maybe significant amounts all at once. It's probably not going to affect them too badly. <BR> It may be somewhat tricky to obtain more than one of the §5Dragon Eggs§0 nessecary to obtain more than one of these. Perhaps there is a bee species that can assist with the limitation.
+tc.research_text.MB_EssenceOblivion=[MB] Отброшенный со злобой
+tc.research_page.MB_EssenceOblivion.1=Разведение пчел для мутаций может быть агрессивным, особенно для долгоживущих видов. Проявив немного сообразительности и лишь малейший намек на самодовольство, вы нашли способ использовать Пространственную сингулярность таким образом, который только высасывает жизненную силу ваших крошечных летающих друзей, понемногу. Ну, может быть, значительные количества сразу. Вероятно, это не повлияет на них слишком сильно. <BR> Возможно, будет несколько сложно получить более одного из §5драконьих яиц§0 необходимо получить более одного из них. Возможно, есть вид пчел, который может помочь с этим ограничением.
+
+tc.research_name.MB_VisAuraProvider=Вис Ускоритель Пасеки
+tc.research_text.MB_VisAuraProvider=Вис? А что насчет Биса?
+tc.research_page.MB_VisAuraProvider.1=Наполнение необычной пыльцы Вис и объединение ее с золотом создает необычный кристалл, который при подаче сантивиса из узла ауры создает энергетическую ауру, которая естественным образом привлекает пчел, когда они настраиваются на окружающую среду внутри Волшебной Пасеки.<LINE>§3Aqua§0 CV удвоит частоту мутаций<BR>§8Perditio§0 CV сократит продолжительность жизни вдвое<BR>§6Aer§0 CV удвоит производительность
+
+tc.research_name.MB_ApimancersDrainer=Apimancer's Drainer
+tc.research_text.MB_ApimancersDrainer=Как долго продержится ваша королева?
+tc.research_page.MB_ApimancersDrainer.1=Apimancer's Drainer — это инновационное устройство в области Магии пчеловодства, предназначенное для извлечения эссенции из жизненной силы пчел. Он размещается под пасекой, устанавливая прямую связь с пасекой выше.<BR>Чтобы определить тип производимой им эссенции, Drainer настраивается путем постукивания по нему нужной эссенцией.<BR>После настройки Drainer преобразует жизненная энергия королевы в выбранную эссенцию...
+
+tc.research_name.MB_ScoopVoid=Пустотный сачок
+tc.research_text.MB_ScoopVoid=Темная сеть
+tc.research_page.MB_ScoopVoid.1=Пустотный металл — любопытная вещь, и пришло время посмотреть, что он может принести в Магию пчеловодства. Его самовосстанавливающиеся свойства проникли и в сеть, создав весьма тревожную сетку.<BR>Будем надеяться, что это не слишком сильно повлияет на пчел...
+
+tc.research_name.MB_GrafterVoid=Пустотный садовый нож
+tc.research_text.MB_GrafterVoid=Искаженная Ива
+tc.research_page.MB_GrafterVoid.1Хотя нет никаких сомнений в том, что тауминит является превосходным материалом, ваше недавнее открытие пустотного металла и последующие эксперименты показали большие перспективы его использования в качестве материала для инструментов. Деликатная природа садовых ножей и восстанавливающие свойства пустотного металла выглядят многообещающей комбинацией. <BR>Очень похож на таумический нож и вызывает такое же утомление.
+
+#Botania Lexicon entries
+magicbees.botania.lexicon.subtitle=[Magic Bees]
+
+magicbees.botania.lexicon.manasteelTools.title=Инструменты натуралиста из манастали 
+magicbees.botania.lexicon.manasteelTools.0=Необычные свойства манастали хорошо подходят для инструментов натуралиста. &1Манасталевый сачок&0 можно использовать для эффективного сбора ульев, а &1Манасталевый садовый нож&0 является надежной заменой обычного бронзового садового ножа. Конечно, оба инструмента обладают способностью восстанавливаться за счет маны. Для достижения наилучших результатов комбинируйте средство с Living Wood.
+magicbees.botania.lexicon.manasteelScoop=&1Манасталевый сачок&0
+magicbees.botania.lexicon.manasteelGrafter=&1Манасталевый садовый нож&0
+
+magicbees.botania.lexicon.beeAlfheim.title=Альфхеймская Магия пчеловодства
+magicbees.botania.lexicon.beeAlfheim.trade=Обмен на &bАльфхеймских дронов&0
+magicbees.botania.lexicon.beeAlfheim.0=&1=&1Эльфийские пчеловоды&0 стремятся открыть для себя прелести пчел вашего мира и особенно заинтересованы в &1Dreaming Drones&0 которые вы можете им предоставить. Взамен они будут торговать &bАльфхеймскими трутнями&0, единственными пчелами, существующими в Альфхейме.
+
+magicbees.botania.lexicon.beegonia.0=Дроны — это основа будущего здоровой колонии, но на самом деле они могут начать просто накапливаться до такой степени, что вы больше не будете знать, что с ними делать. <br>The &1Бегония&0 – решение проблемы переполненности! Просто бросьте запасные дроны поблизости, и они восстановят жизненную силу дрона и преобразуют ее в ману! Они не очень придирчивы и будут
+magicbees.botania.lexicon.beegonia.1=производят постоянное количество маны во время работы, хотя кажется, что более «сложные» пчелы обеспечивают больше маны, чем обычные пчелы, что бы это ни значило. 
+magicbees.botania.lexicon.beegonia.crafting=Syncrostrike's Elegant Solution
+magicbees.botania.lexicon.beegonia.2=Ну. Это была эта или &2Beenus Fly Trap&0, но здесь есть свои проблемы.
+
+magicbees.botania.lexicon.hiveacynth.0=Поиск новых пчел для вашего поголовья может оказаться непростой задачей. К счастью, мы можем использовать воспоминания цветов, чтобы воспроизводить пчел с точностью до 74%! Возможно.<br>The &1Хивеацинт&0 поглощает ману из ближайшего хранилища маны, и как только он соберет достаточно, он начинает преобразовывать ее в жизненную сущность и производить пчелу! Кажется, этот вид несколько случайный, хотя это только «обычные» пчелы
+magicbees.botania.lexicon.hiveacynth.1=будут когда-либо производиться, и примерно пропорционально тому, как они встречаются в дикой природе.<br>Иногда цветок важничает и производит хваленую наследницу, а не вульгарного трутня . Сигнал красного камня не позволит &1Хивеацинту&0 преобразовать ману в жизненную сущность.
+magicbees.botania.lexicon.hiveacynth.crafting=> beesbeesbees.com
+
+magicbees.botania.lexicon.hibeescus.0=&5Неблагородные&0 пчелы, хотя и столь же полезные, как и их &2Нетронутые&0 сородичи, имеют только один недостаток - примерно через 100 поколений они начинают болеть, слабеть и могут погибнуть из-за вас, верно? прежде чем вы получите ту желанную мутацию, которая сведет с ума ваших собратьев-пчеловодов от зависти. Однако, похоже, решение этой проблемы все-таки есть! При наличии достаточного количества маны, времени и помощи особых
+magicbees.botania.lexicon.hibeescus.1=&1Гибискуса&0 на вашей стороне, вы можете устранить множество генетических недостатков у &5Неблагородных&0 диких пчел. Терпение является необходимостью, так как  &1Гибискус&0 творит свою магию очень медленно, до 2 полных дней!<br>Также рекомендуется использовать его силу экономно, так как он невероятно жаждет маны. Применение сигнала красного камня к его корням не позволит ему поглощать новых принцесс или королев, но не 
+magicbees.botania.lexicon.hibeescus.2=остановить операцию генетической очистки, как только она начнется.
+magicbees.botania.lexicon.hibeescus.crafting=Только для злобных людей.
+
+magicbees.botania.lexicon.manaBooster.0=Волшебная пасека — это естественный способ заставить пчел работать быстро, но он немного... ограничен. К счастью, свойства живых камней и лепестков, очевидно, заряжают пчел энергией, заставляя их производить больше. Просто обеспечьте &1Ускоритель маны пасеки&0 постоянным запасом маны, и пасеки будут работать эффективно..
+magicbees.botania.lexicon.manaBooster.crafting=Ожидайте от маны!
 
 for.bees.custom.drone.magicbees.speciesMystical=Мистический трутень
 for.bees.custom.beealyzer.drone.magicbees.speciesMystical=Мистический

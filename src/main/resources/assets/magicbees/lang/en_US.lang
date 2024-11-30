@@ -32,11 +32,13 @@ item.moonDial.name=Jade Moon Dial
 
 item.voidScoop.name=Void Scoop
 item.voidGrafter.name=Void Grafter
+item.beeRing.name=Collector's Bee Ring
 
 #Tiles
 tile.effectJar.name=Bee Collector's Jar
 tile.magicApiary.name=Magic Apiary
 tile.visAuraProvider.name=Vis Apiary Booster
+tile.apimancersDrainer.name=Apimancer's Drainer
 tile.manaAuraProvider.name=Mana Apiary Booster
 tile.hive.curious.name=Curious Hive
 tile.hive.unusual.name=Unusual Hive
@@ -144,6 +146,9 @@ item.frameMetabolic.name=Metabolic Frame
 item.frameNecrotic.name=Necrotic Frame
 item.frameTemporal.name=Temporal Frame
 item.frameOblivion.name=Oblivion Frame
+item.bloodFrame.name=Sanguis Artus
+item.frenziedFrame.name=Maddening Frame of Frenzy
+item.bloodSoakedFrame.name=Blood Frame
 
 #Capsules
 capsule.magic=%s Magic Capsule
@@ -225,6 +230,16 @@ research.node.pure=Pure
 research.node.dark=Dark
 research.node.chaotic=Chaotic
 research.block.crystals=Crystal Cluster
+
+
+#Blood Magic Compat
+tc.research_name.MB_BloodFrame=Sanguis Artus
+tc.research_text.MB_BloodFrame=Welcome, honored guest. To the birthplace of our Dynasty!
+tc.research_name.MB_FrenziedFrame=Maddening Frame of Frenzy
+tc.research_text.MB_FrenziedFrame=May chaos take the world! May chaos take the world!
+frenziedFrame.1=You don't know how it came to you... madness, is it not?<BR>You remember yourself swearing to others that you heard some kind of voice in the back of your mind, almost silently... screaming? You can vaguely remember its ghastly call, screaming for you to burn the world in the purifying flames of chaos.<BR>You took it into your hands, and you distinctly remember feeling the chaotic energies burning through your body, singeing your very mind in its fire.<BR><BR>But... surely you didn't, that would be madness after all...
+bloodFrame.1=You feel a shiver pulse through your very soul as you hold this frame. You feel... horrified.<BR>You aren't quite sure what you created while you were entranced in a blood-enraged frenzy, but you can only watch in abject terror as your bees slowly crumble before your very eyes, only to be replaced in a flash by grotesque simulacrum.<BR>You almost swear you can see it... beating? As if somehow it were alive?<BR>But... surely not, that would be madness after all...
+
 
 #Species
 magicbees.speciesMystical=Mystical
@@ -353,8 +368,6 @@ magicbees.speciesCobalt=Cobalt
 magicbees.speciesCobalt.description=The unstable properties of this material seem to not affect the bees in the slightest.|Apinomicon
 magicbees.speciesManyullyn=Manyullyn
 magicbees.speciesManyullyn.description="Doot doo-dee-doot doot!"
-magicbees.speciesOsmium=Osmium
-magicbees.speciesOsmium.description=Occasionally confused for Iridium bees, despite their lack of goopy texture and pink colouration as described in older books.|Apinomicon
 magicbees.speciesSilicon=Silicon
 magicbees.speciesSilicon.description="Not to be confused with Silicone bees, AKA the Boo Bees!"|Myrathi, Wearer of Headpants
 magicbees.speciesCertus=Certus
@@ -391,6 +404,8 @@ magicbees.speciesTCOrder=Ordered
 magicbees.speciesTCOrder.description=Their combs are nearly perfect, each part mirroring the pattern of the whole.|Apinomicon
 magicbees.speciesTCChaos=Chaotic
 magicbees.speciesTCChaos.description=The social structure of their hives seems to vary day by day, making it more flexible and resillient than others, but significantly more unpredictable.|Apinomicon
+magicbees.speciesTCEssentia=Essentia
+magicbees.speciesTCEssentia.description="Why spam Essentia Condensers when you can just use bees?"|Quantumly, Condenser Enjoyer
 magicbees.speciesTCVis=Vis
 magicbees.speciesTCVis.description="They can feel changes in the aura, but are not yet able to affect it."|Azanor, research notes
 magicbees.speciesTCRejuvenating=Rejuvenating
@@ -644,7 +659,7 @@ tc.research_page.MB_EssenceLife.1=Simple to create by means of magic, this essen
 
 tc.research_name.MB_EssenceDeath=Essence of a Shallow Grave
 tc.research_text.MB_EssenceDeath=Not quite six feet under.
-tc.reseacrh_page.MB_EssenceDeath.1=The Essence of a Shallow Grave channels the death of many of the ... "natural" creatures that wander the world: Zombies, Skeletons, those sorts of things. Exposing bees to this energy has the effect of making them slow and sluggish, and curtails the extent of their lifespan. Some Apimancers consider using frames imbued with these Essences to be cruel, however, others view it as a natrual part of normal beekeeping, with an eye to creating their perfect strain of bees sometime within THEIR lifetime. <BR> The Apimancer's Guild of Safety recommends handling them with telekenisis or very long tongs.
+tc.research_page.MB_EssenceDeath.1=The Essence of a Shallow Grave channels the death of many of the ... "natural" creatures that wander the world: Zombies, Skeletons, those sorts of things. Exposing bees to this energy has the effect of making them slow and sluggish, and curtails the extent of their lifespan. Some Apimancers consider using frames imbued with these Essences to be cruel, however, others view it as a natrual part of normal beekeeping, with an eye to creating their perfect strain of bees sometime within THEIR lifetime. <BR> The Apimancer's Guild of Safety recommends handling them with telekenisis or very long tongs.
 
 tc.research_name.MB_EssenceArmor=Essence of Everlasting Durability
 tc.research_text.MB_EssenceArmor=The rubber to your glue
@@ -669,6 +684,10 @@ tc.research_page.MB_EssenceOblivion.1=Breeding bees for mutations can be aggriva
 tc.research_name.MB_VisAuraProvider=Vis Apiary Booster
 tc.research_text.MB_VisAuraProvider=Vis? What about Bis?
 tc.research_page.MB_VisAuraProvider.1=Infusing Unusual Pollen with vis and combining it with gold creates an unusual crystal that, when fed centivis from an aura node, creates an energizing aura that bees are naturally attracted to when attuned to the environment within a Magic Apiary.<LINE>§3Aqua§0 CV will double mutation rate<BR>§8Perditio§0 CV will halve lifespan<BR>§6Aer§0 CV will double production rate
+
+tc.research_name.MB_ApimancersDrainer=Apimancer's Drainer
+tc.research_text.MB_ApimancersDrainer=How long will your queen last?
+tc.research_page.MB_ApimancersDrainer.1=The Apimancer's Drainer is an innovative device in the field of Apimancy, designed to extract essentia from the life force of bees. It is placed beneath an apiary, establishing a direct connection with the apiary above.<BR>To determine the type of essentia it produces, the Drainer is attuned by tapping it with the desired essentia.<BR>Once attuned, the Drainer converts the life energy of the queen into the selected essentia...
 
 tc.research_name.MB_ScoopVoid=Void Scoop
 tc.research_text.MB_ScoopVoid=The dark net
